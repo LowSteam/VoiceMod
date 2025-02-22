@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "voicemod",
+	"version": "${version}",
+	"name": "VoiceMod",
+	"description": "This is an experimental mod that allows players to communicate with voice chat without needing to have a server plugin or mod",
+	"authors": [
+		"LowSteam"
+	],
+	"contact": {
+		"homepage": "https://github.com/LowSteam",
+		"sources": "https://github.com/LowSteam/VoiceMod"
+	},
+	"license": "MIT",
+	"icon": "assets/voicemod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.lowsteam.voicemod.VoiceMod"
+		],
+		"fabric-datagen": [
+			"net.lowsteam.voicemod.VoiceModDataGenerator"
+		],
+		"client": [
+			"net.lowsteam.voicemod.VoiceModClient"
+		]
+	},
+	"mixins": [
+		"voicemod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
