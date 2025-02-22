@@ -3,7 +3,7 @@
 	"id": "voicemod",
 	"version": "${version}",
 	"name": "VoiceMod",
-	"description": "This is an experimental mod that allows players to communicate with voice chat without needing to have a server plugin or mod",
+	"description": "This is an experimental mod that allows players to communicate with voice chat without needing to send and recieve data through the server using plugins or mods.",
 	"authors": [
 		"LowSteam"
 	],
